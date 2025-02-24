@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    background-color: white; /* Latar belakang putih untuk body */
+    color: #e8e8e8;
+    margin: 0;
+    padding: 0;
+    display: flex;/* Menggunakan flexbox untuk memusatkan wrapper */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Memastikan body memenuhi tinggi viewport */
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper {
+    background-color: #121b22; /* Latar belakang kotak */
+    max-width: 300px; /* Lebar maksimum kotak */
+    width: 100%; /* Memastikan kotak memenuhi lebar maksimum */
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Opsional: menambahkan bayangan */
+    border-radius: 8px; /* Opsional: membuat sudut kotak bulat */
+    overflow: hidden; /* Mencegah konten meluap dari kotak */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #2a3942;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.search-bar {
+    background-color: #2a3942;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    color: #e8e8e8;
+    width: 90%;
+    outline: none;
+}
+
+.chat-list {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #2a3942;
+}
+
+.chat-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-item .chat-content {
+    flex-grow: 1;
+}
+
+.chat-item .chat-content h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.chat-item .chat-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #aebac1;
+}
+
+.chat-item .chat-time {
+    font-size: 0.8em;
+    color: #aebac1;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #1f2c34;
+    width: 100%;
+    position: sticky;
+}
+
+.bottom-nav a {
+    color: #aebac1;
+    text-decoration: none;
+
+}
